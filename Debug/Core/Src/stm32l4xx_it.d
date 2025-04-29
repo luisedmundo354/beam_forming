@@ -1,0 +1,108 @@
+Core/Src/stm32l4xx_it.o: ../Core/Src/stm32l4xx_it.c ../Core/Inc/main.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
+ ../Core/Inc/stm32l4xx_hal_conf.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h \
+ ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h \
+ ../Drivers/CMSIS/Include/core_cm4.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dfsdm.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
+ ../Core/Inc/stm32l4xx_it.h ../Core/Inc/cube_hal.h \
+ ../Core/Inc/stm32l4xx_it.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+ ../Core/Inc/usbd_conf.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+ ../Core/Inc/cube_hal.h ../Core/Inc/usbd_desc.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc/usbd_audio_in.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+ ../Core/Inc/usbd_audio_if.h ../Core/Inc/audio_application.h \
+ /home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Drivers/BSP/CCA02M2/cca02m2_audio.h \
+ ../Core/Inc/cca02m2_conf.h ../Core/Inc/nucleo_l476rg_bus.h \
+ ../Core/Inc/nucleo_l476rg_errno.h
+../Core/Inc/main.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
+../Core/Inc/stm32l4xx_hal_conf.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h:
+../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:
+../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h:
+../Drivers/CMSIS/Include/core_cm4.h:
+../Drivers/CMSIS/Include/cmsis_version.h:
+../Drivers/CMSIS/Include/cmsis_compiler.h:
+../Drivers/CMSIS/Include/cmsis_gcc.h:
+../Drivers/CMSIS/Include/mpu_armv7.h:
+../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dfsdm.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
+../Core/Inc/stm32l4xx_it.h:
+../Core/Inc/cube_hal.h:
+../Core/Inc/stm32l4xx_it.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
+../Core/Inc/usbd_conf.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
+../Core/Inc/cube_hal.h:
+../Core/Inc/usbd_desc.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc/usbd_audio_in.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
+../Core/Inc/usbd_audio_if.h:
+../Core/Inc/audio_application.h:
+/home/lbrenap/STM32CubeIDE/workspace_1.18.0/beam_forming/Drivers/BSP/CCA02M2/cca02m2_audio.h:
+../Core/Inc/cca02m2_conf.h:
+../Core/Inc/nucleo_l476rg_bus.h:
+../Core/Inc/nucleo_l476rg_errno.h:
