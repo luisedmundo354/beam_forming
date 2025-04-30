@@ -34,8 +34,6 @@ This work-in-progress repo ports ST’s **beam-forming and multi-mic capture dem
 |------|---------|---------|
 | **STM32CubeIDE** | ≥ 1.15 | Open the `beam_forming.ioc` directly. Import wizard reference  ([Importing a new .ioc in an existing project](https://community.st.com/t5/stm32cubemx-mcus/importing-a-new-ioc-in-an-existing-project/td-p/61191?utm_source=chatgpt.com), [QuicTip #7 How to import archived project into STM32CubeIDE](https://www.youtube.com/watch?pp=0gcJCdgAo7VqN5tD&v=TtfKunFbshM&utm_source=chatgpt.com)) |
 | **X-CUBE-MEMSMIC1** pack | v10.x | Libraries already committed under `/Middlewares/ST` |
-| **Parson** JSON lib | bundled | Lightweight C JSON lib used for runtime configs  ([kgabis/parson: Lightweight JSON library written in C. - GitHub](https://github.com/kgabis/parson?utm_source=chatgpt.com), [which JSON library is good for generating and pars...](https://community.st.com/t5/stm32-mcus-products/which-json-library-is-good-for-generating-and-parsing-for-st/td-p/114552?utm_source=chatgpt.com)) |
-
 ---
 
 ## 4  Getting Started  
@@ -43,8 +41,8 @@ This work-in-progress repo ports ST’s **beam-forming and multi-mic capture dem
 ### 4.1  Clone  
 
 ```bash
-git clone https://github.com/<your-user>/beam_forming_L476.git
-cd beam_forming_L476
+git clone https://github.com/<your-user>/beam_forming.git
+cd beam_forming
 ```
 
 ### 4.2  Import into CubeIDE  
@@ -59,7 +57,7 @@ cd beam_forming_L476
 
 ### 4.4  Verify USB Streaming  
 
-* After reset, the board enumerates as **“STM32 BeamForm Mic”** (USB Audio Class 1).  
+* After reset, the board enumerates as **“STM32 Mic”** (USB Audio Class 1).  
 * Open Audacity / arecord / any host DAW at 48 kHz mono and verify that only sounds in the steered direction are captured. ([Introduction to USB with STM32 - stm32mcu - ST wiki](https://wiki.st.com/stm32mcu/wiki/Introduction_to_USB_with_STM32?utm_source=chatgpt.com), [Solved: [BUG] STM32CubeMX USB Audio Class example not hand...](https://community.st.com/t5/stm32cubemx-mcus/bug-stm32cubemx-usb-audio-class-example-not-handling-usb-set/td-p/400465?utm_source=chatgpt.com))  
 
 ---
@@ -122,4 +120,4 @@ Original work in `Core/*` is released under MIT unless stated otherwise.
 
 ---
 
-*Happy hacking & happy beaming!*
+*:)*
