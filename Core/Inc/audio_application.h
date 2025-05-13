@@ -29,7 +29,7 @@ extern "C" {
 
 
 /* Includes ------------------------------------------------------------------*/
-#include "cube_hal.h"
+#include "cca02m2_audio.h"
 
 /** @addtogroup X_CUBE_MEMSMIC1_Applications
   * @{

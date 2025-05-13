@@ -21,6 +21,9 @@
 #include "cca02m2_audio.h"
 #include "cca02m2_conf.h"
 #include "audio.h"
+// On STM32L4XX_NUCLEO board PDM-over-SAI is not supported
+#undef USE_STM32WBXX_NUCLEO
+#include "stm32l4xx_hal_sai.h"
 
 #ifndef USE_STM32L4XX_NUCLEO
 #include "arm_math.h"
@@ -136,7 +139,10 @@ static PDM2PCM_Handler_t PDM2PCMHandler[4];
 static PDM2PCM_Config_t  PDM2PCMConfig[4];
 
 #ifdef USE_STM32WBXX_NUCLEO
+// SAI (Serial Audio Interface) handle: only when using STM32WB boards
+#ifdef USE_STM32WBXX_NUCLEO
 SAI_HandleTypeDef hAudioInSai;
+#endif
 #define PDM_INTERNAL_BUFFER_SIZE_SAI ((MAX_MIC_FREQ / 8) * MAX_AUDIO_IN_CHANNEL_NBR_TOTAL * N_MS_PER_INTERRUPT)
 static uint16_t SAI_InternalBuffer[PDM_INTERNAL_BUFFER_SIZE_SAI];
 #else
@@ -1696,7 +1702,8 @@ int32_t CCA02M2_AUDIO_IN_RecordPDM(uint32_t Instance, uint8_t *pBuf, uint32_t Nb
   }
   else
   {
-#ifdef USE_STM32L4XX_NUCLEO
+    /* PDM record via SAI is only supported on STM32WB Nucleo boards */
+#ifdef USE_STM32WBXX_NUCLEO
 
     static SAI_HandleTypeDef hAudioInSai;
     /* Start the process receive DMA */
@@ -1705,11 +1712,10 @@ int32_t CCA02M2_AUDIO_IN_RecordPDM(uint32_t Instance, uint8_t *pBuf, uint32_t Nb
     {
       return BSP_ERROR_PERIPH_FAILURE;
     }
-    /* Update BSP AUDIO IN state */
     AudioInCtx[Instance].State = AUDIO_IN_STATE_RECORDING;
-    /* Return BSP status */
     return BSP_ERROR_NONE;
 #else
+    /* PDM via SAI not supported on this board */
     UNUSED(pBuf);
     UNUSED(NbrOfBytes);
     return BSP_ERROR_WRONG_PARAM;

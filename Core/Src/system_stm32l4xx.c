@@ -89,6 +89,20 @@
   */
 
 #include "stm32l4xx.h"
+/* Provide default vector table relocation definitions if none provided */
+#ifndef VECT_TAB_BASE_ADDRESS
+#define VECT_TAB_BASE_ADDRESS FLASH_BASE
+#endif
+#ifndef VECT_TAB_OFFSET
+#define VECT_TAB_OFFSET       0x00000000U
+#endif
+/* Provide default vector table address/offset if none defined */
+#ifndef VECT_TAB_BASE_ADDRESS
+#define VECT_TAB_BASE_ADDRESS    FLASH_BASE
+#endif
+#ifndef VECT_TAB_OFFSET
+#define VECT_TAB_OFFSET          0x00000000U
+#endif
 
 /**
   * @}
@@ -197,10 +211,6 @@
 
 void SystemInit(void)
 {
-#if defined(USER_VECT_TAB_ADDRESS)
-  /* Configure the Vector Table location -------------------------------------*/
-  SCB->VTOR = VECT_TAB_BASE_ADDRESS | VECT_TAB_OFFSET;
-#endif
 
   /* FPU settings ------------------------------------------------------------*/
 #if (__FPU_PRESENT == 1) && (__FPU_USED == 1)

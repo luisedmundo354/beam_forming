@@ -52,6 +52,8 @@ extern "C" {
 #include <stdlib.h>
 #include <string.h>
 
+/* Include HAL to define USB peripheral types (PCD_HandleTypeDef, __IO, etc.) */
+#include "stm32l4xx_hal.h"
 extern PCD_HandleTypeDef hpcd;
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

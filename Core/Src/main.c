@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "cube_hal.h"
+#include "audio_application.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

@@ -21,6 +21,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "audio_application.h"
+#include "usbd_audio_if.h"
 
 /** @addtogroup X_CUBE_MEMSMIC1_Applications
   * @{

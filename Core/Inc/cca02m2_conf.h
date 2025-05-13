@@ -24,6 +24,11 @@
 #ifndef CCA02M2_CONF_H__
 #define CCA02M2_CONF_H__
 
+/* Ensure TARGET STM32L4 Nucleo platform is selected if not passed via compiler */
+#ifndef USE_STM32L4XX_NUCLEO
+#define USE_STM32L4XX_NUCLEO
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
