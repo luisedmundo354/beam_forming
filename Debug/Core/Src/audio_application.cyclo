@@ -1,0 +1,6 @@
+../Core/Src/audio_application.c:68:6:CCA02M2_AUDIO_IN_HalfTransfer_CallBack	1
+../Core/Src/audio_application.c:79:6:CCA02M2_AUDIO_IN_TransferComplete_CallBack	1
+../Core/Src/audio_application.c:94:6:AudioProcess	1
+../Core/Src/audio_application.c:108:6:Init_Acquisition_Peripherals	2
+../Core/Src/audio_application.c:130:6:Start_Acquisition	2
+../Core/Src/audio_application.c:139:6:Error_Handler	1
