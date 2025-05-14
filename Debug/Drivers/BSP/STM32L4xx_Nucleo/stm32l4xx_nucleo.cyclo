@@ -7,6 +7,9 @@
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:266:6:BSP_PB_Init	4
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:305:6:BSP_PB_DeInit	1
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:320:10:BSP_PB_GetState	1
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:331:9:BSP_JOY_Init	2
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:354:6:BSP_JOY_DeInit	1
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:371:18:BSP_JOY_GetState	12
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:679:13:SPIx_MspInit	1
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:714:13:SPIx_Init	2
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:754:13:SPIx_WriteReadData	2
@@ -20,3 +23,7 @@
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:929:6:LCD_IO_WriteReg	1
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:950:6:LCD_IO_WriteMultipleData	6
 ../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:1006:6:LCD_Delay	1
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:1020:13:ADCx_MspInit	1
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:1056:13:ADCx_MspDeInit	1
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:1076:26:ADCx_Init	4
+../Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c:1117:13:ADCx_DeInit	1

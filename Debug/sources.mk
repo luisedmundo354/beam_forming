@@ -24,9 +24,22 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/AMICAM1 \
 Drivers/BSP/CCA02M2 \
 Drivers/BSP/Components/ad1974 \
 Drivers/BSP/Components/adau1978 \
+Drivers/BSP/MicArrayCoupon \
 Drivers/BSP/STM32L4xx_Nucleo \
+Drivers/BSP/STWIN \
+Drivers/CMSIS/DSP/Source/BasicMathFunctions \
+Drivers/CMSIS/DSP/Source/CommonTables \
+Drivers/CMSIS/DSP/Source/ComplexMathFunctions \
+Drivers/CMSIS/DSP/Source/ControllerFunctions \
+Drivers/CMSIS/DSP/Source/FastMathFunctions \
+Drivers/CMSIS/DSP/Source/FilteringFunctions \
+Drivers/CMSIS/DSP/Source/MatrixFunctions \
+Drivers/CMSIS/DSP/Source/StatisticsFunctions \
+Drivers/CMSIS/DSP/Source/SupportFunctions \
+Drivers/CMSIS/DSP/Source/TransformFunctions \
 Drivers/STM32L4xx_HAL_Driver/Src \
 

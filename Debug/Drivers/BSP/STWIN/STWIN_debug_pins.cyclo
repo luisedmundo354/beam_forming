@@ -1,0 +1,6 @@
+../Drivers/BSP/STWIN/STWIN_debug_pins.c:80:6:BSP_DEBUG_PIN_Init_All	1
+../Drivers/BSP/STWIN/STWIN_debug_pins.c:110:6:BSP_DEBUG_PIN_Init	13
+../Drivers/BSP/STWIN/STWIN_debug_pins.c:128:7:BSP_DEBUG_PIN_DeInit	13
+../Drivers/BSP/STWIN/STWIN_debug_pins.c:134:6:BSP_DEBUG_PIN_On	1
+../Drivers/BSP/STWIN/STWIN_debug_pins.c:139:6:BSP_DEBUG_PIN_Off	1
+../Drivers/BSP/STWIN/STWIN_debug_pins.c:144:6:BSP_DEBUG_PIN_Toggle	1

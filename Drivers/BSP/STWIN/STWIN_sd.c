@@ -50,7 +50,8 @@ uint8_t BSP_SD_Init(void)
   hsd1.Init.BusWide = SDMMC_BUS_WIDE_4B;
   hsd1.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_ENABLE;
   hsd1.Init.ClockDiv = 1;
-  hsd1.Init.Transceiver = SDMMC_TRANSCEIVER_DISABLE;
+  /* Note: Transceiver field not available on STM32L4xx HAL; skip setting */
+  /* hsd1.Init.Transceiver = SDMMC_TRANSCEIVER_DISABLE; */
 
   /* Msp SD initialization */
   BSP_SD_MspInit(&hsd1);

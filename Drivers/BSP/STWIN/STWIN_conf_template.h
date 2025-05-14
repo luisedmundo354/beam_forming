@@ -65,10 +65,10 @@ modification in the application layer developed with older versions of the drive
 
 /* AMic_Array */
 
-#define BSP_ADAU1978_Init       BSP_I2C2_Init
-#define BSP_ADAU1978_DeInit     BSP_I2C2_DeInit
-#define BSP_ADAU1978_ReadReg    BSP_I2C2_ReadReg
-#define BSP_ADAU1978_WriteReg   BSP_I2C2_WriteReg
+#define BSP_ADAU1978_Init       BSP_I2C1_Init
+#define BSP_ADAU1978_DeInit     BSP_I2C1_DeInit
+#define BSP_ADAU1978_ReadReg    BSP_I2C1_ReadReg
+#define BSP_ADAU1978_WriteReg   BSP_I2C1_WriteReg
 
 
 /* Battery Charger */
